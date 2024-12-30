@@ -1,0 +1,63 @@
+/* src/components/Header.css */
+
+/* Make the header fixed at the top of the page */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  position: fixed; /* Keeps the header at the top */
+  top: 0; /* Align it at the very top of the page */
+  left: 0;
+  width: 100%; /* Ensures the header spans the full width */
+  z-index: 1000; /* Ensures the header stays on top of other elements */
+  box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}
+
+/* Space for the left section */
+.header-left {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Styles for the navigation menu */
+.header-right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header-right li {
+  margin-left: 20px;
+}
+
+.header-right a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header-right a:hover {
+  text-decoration: underline;
+}
+
+/* Add padding to the body or the first element to prevent it from being hidden under the fixed header */
+body {
+  padding-top: 80px; /* Add space at the top to avoid content being hidden behind the fixed header */
+  margin: 0; /* Remove default margin */
+  overflow: hidden; /* Prevent both horizontal and vertical scrolling */
+}
+
+html {
+  height: 100%;
+  overflow: hidden; /* Prevent both horizontal and vertical scrolling */
+}
+
+/* Add padding/margin to the main content to ensure there's space */
+main {
+  padding: 0 20px; /* Add 20px padding on the left and right sides */
+  box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}

@@ -1,0 +1,110 @@
+/* src/pages/HomePage.css */
+
+/* Make sure html and body take full height */
+html, body {
+    height: 100%; /* Full height of the viewport */
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Hide vertical scrollbar */
+    scroll-behavior: smooth; /* Optional: Smooth scrolling */
+}
+
+.home-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh; /* Ensures it fills the whole screen height */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    overflow-y: auto; /* Allow scrolling within the container */
+    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.home-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Safari, and Edge */
+}
+
+/* Align About Me text and Profile Picture on the same line */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Push text to the left and image to the right */
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0; /* Adds space below the header */
+}
+
+h1 {
+    color: #333;
+    font-size: 3em;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-right: 20px; /* Add space between text and image */
+    flex: 1; /* Allow text to take the remaining space */
+}
+
+.profile-picture {
+    display: flex;
+    justify-content: flex-end; /* Align the image to the right */
+    align-items: center;
+}
+
+.profile-picture img {
+    width: 150px; /* Adjust the size of the profile image */
+    height: 150px;
+    border-radius: 50%; /* Make it circular */
+    border: 3px solid #0077cc; /* Optional: Add a border */
+    object-fit: cover; /* Ensure the image fits well */
+}
+
+.bio-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 0;
+}
+
+.bio {
+    max-width: 100%; /* Limit the width of the bio section */
+    flex: 1; /* Allow the bio to take up the available space */
+    margin-right: 20px; /* Add space between text and image */
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0; /* Reduce space between h1 and h2 */
+    font-size: 1.4em;
+    color: #0077cc;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 1em;
+    color: #555;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
