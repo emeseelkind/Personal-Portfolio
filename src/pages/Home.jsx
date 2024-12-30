@@ -1,6 +1,19 @@
 import React from 'react';
 import './Home.css'; 
 import profilePic from '../assets/profile.png'; // Import the image
+import { Link } from 'react-router-dom';
+import painting1 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/paintings/PXL_20241229_211313112~2.jpg";
+import drawing1 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/paintings/PXL_20241229_211759849.jpg";
+import rock1 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/paintings/PXL_20241229_211637602.jpg";
+import cds1 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/paintings/PXL_20241229_211618280~2.jpg";
+
+
+const images = [
+  { src: painting1, title: "Paintings", link: "/paintings" },
+  { src: drawing1, title: "Drawings", link: "/drawings" },
+  { src: rock1, title: "Rocks", link: "/rocks" },
+  { src: cds1, title: "CDs", link: "/cds" },
+];
 
 const Home = () => {
   return (
@@ -33,9 +46,26 @@ const Home = () => {
 
           <h2>⚡ Fun fact</h2>
           <p>I am a Queen's University Varsity Figure Skater.</p>
+          <h2>🎨 My Artwork</h2>
         </section>
       </div>
+      {/* Image Gallery Section */}
+      <div className="gallery-container">
+        {/* <h2>🎨 My Artwork</h2> */}
+        <div className="gallery">
+          {images.map((image, index) => (
+            <div key={index} className="gallery-item">
+            <Link to={image.link}>  {/* Wrap image with Link */}
+              <img src={image.src} alt={image.title} className="gallery-image" />
+            </Link>
+            <div className="gallery-details">
+              <h3>{image.title}</h3>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
+  </div>
   );
 };
 

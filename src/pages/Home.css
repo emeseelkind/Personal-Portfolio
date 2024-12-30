@@ -13,6 +13,8 @@ html, body {
 }
 
 .home-container {
+    position: relative;
+    top: 100px;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
@@ -25,6 +27,7 @@ html, body {
     overflow-y: auto; /* Allow scrolling within the container */
     -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
     scrollbar-width: none; /* Hide scrollbar in Firefox */
+    width: 100%;
 }
 
 .home-container::-webkit-scrollbar {
@@ -41,11 +44,9 @@ html, body {
 }
 
 h1 {
-    color: #333;
+    color: #182e3c;
     font-size: 3em;
-    margin-top: 20px;
-    margin-bottom: 0;
-    margin-right: 20px; /* Add space between text and image */
+    margin: 20px 20px 0 0;  /* Add space between text and image */
     flex: 1; /* Allow text to take the remaining space */
 }
 
@@ -59,7 +60,7 @@ h1 {
     width: 150px; /* Adjust the size of the profile image */
     height: 150px;
     border-radius: 50%; /* Make it circular */
-    border: 3px solid #0077cc; /* Optional: Add a border */
+    border: 3px solid #356989; /* Optional: Add a border */
     object-fit: cover; /* Ensure the image fits well */
 }
 
@@ -81,7 +82,7 @@ h2 {
     margin-top: 0;
     margin-bottom: 0; /* Reduce space between h1 and h2 */
     font-size: 1.4em;
-    color: #0077cc;
+    color: #356989;
 }
 
 p {
@@ -107,4 +108,40 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+/* Gallery styles */
+.gallery-container {
+    align-items: left;
+    margin-top: 40px;
+}
+
+.gallery {
+display: grid;
+grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+width: 100%;
+gap: 20px;
+}
+
+.gallery-item {
+border: 1px solid #182e3c;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 4px 8px #182e3c;
+background-color: #fff;
+text-align: center;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.gallery-image {
+width: 150px; /* Set the width of the image */
+height: auto;
+display: block;
+}
+
+.gallery-details {
+padding: 10px;
 }
