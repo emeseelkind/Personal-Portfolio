@@ -16,9 +16,15 @@ const Header = () => {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/paintings">Paintings</Link></li>
             <li><Link to="/drawings">Drawings</Link></li>
-            <li><Link to="/rocks">Rocks</Link></li>
-            <li><Link to="/cds">CDs</Link></li>
-
+            <li className="dropdown">
+              <button onClick={toggleDropdown}>More</button>
+              {isDropdownOpen && (
+                <ul className="dropdown-menu">
+                  <li><Link to="/rocks">Rocks</Link></li>
+                  <li><Link to="/cds">CDs</Link></li>
+                </ul>
+              )}
+            </li>
           </ul>
         </nav>
       </div>
