@@ -1,6 +1,8 @@
 
 import React from 'react';
-import './pages/Drawings.css'; 
+import "C:/Users/emese/Desktop/Emese's Art/emeses-art/src/pages/Drawing.css"; 
+
+
 import Drawing1 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/drawings/PXL_20241230_223141678.jpg";
 import Drawing2 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/drawings/PXL_20241230_223156507.jpg";
 import Drawing3 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/drawings/PXL_20241230_223220559.jpg";
@@ -17,7 +19,6 @@ import Drawing13 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/draw
 import Drawing14 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/drawings/PXL_20241230_223636161.jpg";
 import Drawing15 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/drawings/PXL_20241230_223643521.jpg";
 import Drawing16 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/drawings/PXL_20241230_223656640.jpg";
-import Drawing17 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/drawings/PXL_20241230_223659865.jpg";
 import Drawing18 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/drawings/PXL_20241230_223722968.jpg";
 import Drawing19 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/drawings/PXL_20241230_223739459.jpg";
 import Drawing20 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/drawings/PXL_20241230_223759565.jpg";
@@ -56,41 +57,40 @@ const imageDetails = [
   { src: Drawing7, title: "title7" },
   { src: Drawing8, title: "title8" },
   { src: Drawing9, title: "title9" },
-  { src: Drawing10, title: "title10" },
-  { src: Drawing11, title: "title11" },
-  { src: Drawing12, title: "title12" },
-  { src: Drawing13, title: "title13" },
-  { src: Drawing14, title: "title14" },
-  { src: Drawing15, title: "title15" },
-  { src: Drawing16, title: "title16" },
-  { src: Drawing17, title: "title17" },
+  { src: Drawing10, title: "AGO Sculpures" },
+  { src: Drawing11, title: "Keszi" },
+  { src: Drawing12, title: "Turtle" },
+  { src: Drawing13, title: "Features of Babies and Children part 1" },
+  { src: Drawing14, title: "Features of Babies and Children part 2" },
+  { src: Drawing15, title: "Dog" },
+  { src: Drawing16, title: "Troll" },
   { src: Drawing18, title: "title18" },
-  { src: Drawing19, title: "title19" },
-  { src: Drawing20, title: "title20" },
-  { src: Drawing21, title: "title21" },
+  { src: Drawing19, title: "Formula 1 Car" },
+  { src: Drawing20, title: "A Pastiche of Amedeo Modigliani's Jeanne Hébuterne" },
+  { src: Drawing21, title: "Moments from Quebec City" },
   { src: Drawing22, title: "title22" },
-  { src: Drawing23, title: "title23" },
-  { src: Drawing24, title: "title24" },
-  { src: Drawing25, title: "title25" },
-  { src: Drawing26, title: "title26" },
-  { src: Drawing27, title: "title27" },
-  { src: Drawing28, title: "title28" },
-  { src: Drawing29, title: "title29" },
-  { src: Drawing30, title: "title30" },
-  { src: Drawing31, title: "title31" },
-  { src: Drawing32, title: "title32" },
-  { src: Drawing33, title: "title33" },
-  { src: Drawing34, title: "title34" },
+  { src: Drawing23, title: "The Lion King" },
+  { src: Drawing24, title: "Sides of a Face" },
+  { src: Drawing25, title: "Girl with a Pearl Earring" },
+  { src: Drawing26, title: "Primate" },
+  { src: Drawing27, title: "Crop Top" },
+  { src: Drawing28, title: "Umbrella" },
+  { src: Drawing29, title: "Small Town" },
+  { src: Drawing30, title: "Bird" },
+  { src: Drawing31, title: "Stone Arch" },
+  { src: Drawing32, title: "Cottage" },
+  { src: Drawing33, title: "Girl" },
+  { src: Drawing34, title: "Adam" },
   { src: Drawing35, title: "title35" },
-  { src: Drawing36, title: "title36" },
-  { src: Drawing37, title: "title37" },
-  { src: Drawing38, title: "title38" },
-  { src: Drawing39, title: "title39" },
-  { src: Drawing40, title: "title40" },
-  { src: Drawing41, title: "title41" },
-  { src: Drawing42, title: "title42" },
-  { src: Drawing43, title: "title43" },
-  { src: Drawing44, title: "title44" },
+  { src: Drawing36, title: "RHPS" },
+  { src: Drawing37, title: "Chess" },
+  { src: Drawing38, title: "Circe" },
+  { src: Drawing39, title: "Circe as a child with her Father" },
+  { src: Drawing40, title: "Pencils" },
+  { src: Drawing41, title: "Mother Giraffe with her child" },
+  { src: Drawing42, title: "Cows" },
+  { src: Drawing43, title: "Back to the basics with Deer" },
+  { src: Drawing44, title: "Rhinoceros" },
 ];
 
 
@@ -99,17 +99,16 @@ const DrawingPage = () => {
   return (
     <div className="drawing-page">
       <h1 className="title">Sketches</h1>
-      <p className="description">Welcome to my sketches protfolio. This is a collection from 2016 - 2018.</p>
+      <p className="description">Welcome to my sketches protfolio. This is a collection from 2016 to the present.</p>
       <div className="gallery">
         {imageDetails.map((image, index) => (
           <div className="card" key={index}>
             <div className="card-inner">
               <div className="card-front">
-                <img src={image.src} alt={`Painting ${index + 1}`} />
+                <img src={image.src} alt={`Drawing ${index + 1}`} />
               </div>
               <div className="card-back">
                 <h3>{image.title}</h3>
-                <p>Date: {image.date}</p>
               </div>
             </div>
           </div>
