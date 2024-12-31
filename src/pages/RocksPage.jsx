@@ -47,13 +47,9 @@ const RocksPage = () => {
       <p className="description">Welcome to my rocks portfolio. This is a collection from 2020-2022.</p>
       <div className="gallery">
         {imageDetails.map((image, index) => (
-          <div className="card" key={index}>
-            <div className="card-inner">
-              <div className="card-front">
-                <img src={image.src} alt={`Rock ${index + 1}: ${image.title}`} />
-              </div>
-            </div>
-          </div>
+          <div className="image-container" key={index}>
+          <img className="rock-image" src={image.src} alt={image.title} />
+        </div>
         ))}
       </div>
     </div>
