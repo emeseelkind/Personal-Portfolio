@@ -5,8 +5,6 @@ html, body {
     height: 100%; /* Full height of the viewport */
     width: 100%;
     margin-top: 40px;
-    margin-bottom: 0;
-    padding: 0;
     overflow-x: hidden; /* Prevent horizontal scrolling */
     overflow-y: auto; /* Hide vertical scrollbar */
     scroll-behavior: smooth; /* Optional: Smooth scrolling */
@@ -57,8 +55,8 @@ h1 {
 }
 
 .profile-picture img {
-    width: 150px; /* Adjust the size of the profile image */
-    height: 150px;
+    width: 200px; /* Adjust the size of the profile image */
+    height: 200px;
     border-radius: 50%; /* Make it circular */
     border: 3px solid #356989; /* Optional: Add a border */
     object-fit: cover; /* Ensure the image fits well */
@@ -137,7 +135,7 @@ align-items: center;
 }
 
 .gallery-image {
-width: 150px; /* Set the width of the image */
+width: 200px; /* Set the width of the image */
 height: auto;
 display: block;
 }
