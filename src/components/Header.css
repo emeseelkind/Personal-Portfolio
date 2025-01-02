@@ -31,47 +31,8 @@
 
 .header-right li {
   margin-left: 20px;
-  position: relative;
-}
-.header-right .dropdown button {
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-}
-.header-right .dropdown button:hover {
-  color: #007bff; /* Change color on hover */
-}
-/* Dropdown menu styling */
-.header-right .dropdown-menu {
-  display: none; /* Hide the dropdown initially */
-  position: absolute; /* Position it relative to the parent */
-  top: 100%; /* Position it just below the dropdown button */
-  left: 0;
-  background-color: #182e3c;
-  border-radius: 4px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  z-index: 10; /* Ensure it is on top of other content */
-}
-.header-right .dropdown-menu li {
-  padding: 8px 16px;
 }
 
-.header-right .dropdown-menu li a {
-  color: white;
-  text-decoration: none;
-}
-
-.header-right .dropdown-menu li a:hover {
-  text-decoration: underline;
-}
-
-/* Show the dropdown when the "More" button is hovered or clicked */
-.header-right .dropdown:hover .dropdown-menu {
-  display: block; /* Show the dropdown menu when hovering the parent */
-}
-/*
 .header-right a {
   color: white;
   text-decoration: none;
@@ -81,9 +42,52 @@
 .header-right a:hover {
   text-decoration: underline;
 }
-  */
-  
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown-button {
+  background: none;
+  border: none;
+  color: white;
+  font: 18px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #182e3c;
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  min-width: 120px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column; 
+  margin-top: 0.5rem;
+}
+
+.dropdown-menu li {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #2a4456;  /* Slightly lighter than the base color */
+  text-decoration: underline; 
+}
 /* Add padding to the body or the first element to prevent it from being hidden under the fixed header */
 body {
   padding-top: 80px; /* Add space at the top to avoid content being hidden behind the fixed header */

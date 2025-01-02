@@ -1,0 +1,50 @@
+.rocks-page {
+    text-align: center;
+    position: relative;
+
+    margin-top: 300px;
+    padding: 0 20px;
+}
+
+.title {
+    color: #182e3c;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-container {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.rock-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the entire image is shown */
+    transition: transform 0.3s ease;
+}
+
+.rock-image:hover {
+    transform: scale(1.25);
+}
+
+.image-title {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
