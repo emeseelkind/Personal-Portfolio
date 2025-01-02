@@ -30,40 +30,49 @@ const Home = () => {
       {/* Flex container to align text and profile picture side by side */}
       <div className="bio-container">
         <section className="bio">
-          <h2>🏫 Student</h2>
-          <p>I am a Biomedical Computing student at Queen's University doing Research at the Perk Lab.</p>
-
+        <div className="bio-box">
+          <h2>Bio</h2>
+          <p>I am a Biomedical Computing student at Queen's University but I am also an artist. 
+            I went to an arts school in middle school called Spectrum Alternative School where I was able to build my artistic abilities.
+            This portfolio showcases a collection of my visual art projects completed both at school and after graduation.
+            Art of many mediums became a passion of mine and I have continued to create art in my free time as an outlet.
+             This portfolio includes paintings, sketches, and other visual mediums. 
+             I also love coding so I developed this website from scratch. 
+             I hope you enjoy!</p>
+          </div>
+          <div className="email-box">
           <h2>📫 Send me an email</h2>
           <p>Personal Email: <a href="mailto:emese.elkind@gmail.com">emese.elkind@gmail.com</a></p>
 
           <p>School Email: <a href="mailto:21ee17@queensu.ca">21ee17@queensu.ca</a></p>
-
+          
           <h2>🔗 Connect with me on LinkedIn</h2>
           <p>
             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
               My LinkedIn Profile
             </a>
           </p>
-
           <h2>⚡ Fun fact</h2>
           <p>I am a Queen's University Varsity Figure Skater.</p>
-          <h2>🎨 My Artwork</h2>
+          </div>
         </section>
       </div>
       {/* Image Gallery Section */}
-      <div className="gallery-container">
-        {/* <h2>🎨 My Artwork</h2> */}
-        <div className="gallery">
-          {images.map((image, index) => (
-            <div key={index} className="gallery-item">
-            <Link to={image.link}>  {/* Wrap image with Link */}
-              <img src={image.src} alt={image.title} className="gallery-image" />
-            </Link>
-            <div className="gallery-details">
-              <h3>{image.title}</h3>
+      <div className="art-box">
+        <h2>🎨 My Artwork</h2>
+        <div className="gallery-container">
+          <div className="gallery">
+            {images.map((image, index) => (
+              <div key={index} className="gallery-item">
+              <Link to={image.link}>  {/* Wrap image with Link */}
+                <img src={image.src} alt={image.title} className="gallery-image" />
+              </Link>
+              <div className="gallery-details">
+                <h3>{image.title}</h3>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   </div>
