@@ -19,8 +19,11 @@
 /* Space for the left section */
 .header-left {
   font-size: 26px;
+  margin-left: 20px;
 }
-
+.header-right {
+  margin-right: 50px; /* Move the right section over by 50px */
+}
 /* Styles for the navigation menu */
 .header-right ul {
   list-style: none;
@@ -59,7 +62,8 @@
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 0;
+  left: auto;
+  right: 0;
   background-color: #182e3c;
   border-radius: 4px;
   padding: 0.5rem 0;

@@ -18,7 +18,12 @@ const PostersPage = () => {
       <div className="gallery">
         {imageDetails.map((image, index) => (
           <div className="image-container" key={index}>
-          <img className="rock-image" src={image.src} alt={image.title} />
+          <img
+            className="posters-image"
+            src={image.src}
+            alt={image.title}
+          />
+          <p className="image-title">{image.title}</p>
         </div>
         ))}
       </div>
