@@ -6,7 +6,8 @@ import Home from './pages/Home.jsx';
 import PaintingPage from './pages/PaintingPage.jsx';
 import DrawingsPage from './pages/DrawingPage.jsx';
 import RocksPage from './pages/RocksPage.jsx';  
-import CDsPage from './pages/CDsPage.jsx';      
+import CDsPage from './pages/CDsPage.jsx';   
+import Posters from './pages/Posters.jsx';   
 
 function App() {
   return (
@@ -18,9 +19,10 @@ function App() {
         <Route path="/drawings" element={<DrawingsPage />} />
         <Route path="/rocks" element={<RocksPage />} /> 
         <Route path="/cds" element={<CDsPage />} />
+        <Route path="/posters" element={<Posters />} />
+
       </Routes>
     </Router>
   );
 }
-
 export default App

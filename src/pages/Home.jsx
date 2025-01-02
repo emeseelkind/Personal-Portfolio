@@ -6,7 +6,7 @@ import painting1 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/pain
 import rock1 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/rocks/PXL_20241231_184328377.jpg";
 import cds1 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/paintings/PXL_20241229_211618280~2.jpg";
 import drawing1 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/drawings/PXL_20241230_223328302.jpg";
-import poster1 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/posters/PXL_20250102_001735674.jpg";
+import poster1 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/posters/PXL_20250102_001656830~2.jpg";
 
 const images = [
   { src: painting1, title: "Paintings", link: "/paintings" },
