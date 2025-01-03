@@ -1,179 +1,209 @@
-/* src/pages/HomePage.css */
-
-/* Make sure html and body take full height */
-html, body {
-    height: 100%; /* Full height of the viewport */
-    width: 100%;
-    margin-top: 40px;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    overflow-y: auto; /* Hide vertical scrollbar */
-    scroll-behavior: smooth; /* Optional: Smooth scrolling */
-}
-
-.home-container {
+/* Reset default margin and ensure proper scrolling */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-y: auto;
     position: relative;
-    top: 120px;
-    font-family: Arial, sans-serif;
+
+  }
+  
+  .home-container {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: 100vh; /* Ensures it fills the whole screen height */
-    padding: 45px;
-    background-color: #ffffff;
-    border-radius: 2px;
-    overflow-y: auto; /* Allow scrolling within the container */
-    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
-    scrollbar-width: none; /* Hide scrollbar in Firefox */
-    width: 94%;
-}
-
-.home-container::-webkit-scrollbar {
-    display: none; /* Hide scrollbar in Chrome, Safari, and Edge */
-}
-
-/* Align About Me text and Profile Picture */
-.header-container {
-    display: flex;
-    justify-content: space-between; /* Push text to the left and image to the right */
-    align-items: center;
+    position: relative;
+  }
+  
+  /* Content wrapper */
+  .content-wrapper {
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
     width: 100%;
-    margin-bottom: 0; /* Adds space below the header */
-}
-
-h1 {
+    box-sizing: border-box;
+  }
+  
+  /* Header styles */
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  
+  .header-container h1 {
+    font-size: 2.5rem;
     color: #182e3c;
-    font-size: 3em;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 0;
-    margin-right: 0;
-    flex: 1; /* Allow text to take the remaining space */
-}
-
-.profile-picture {
-    display: flex;
-    justify-content: flex-end; /* Align the image to the right */
-    align-items: center;
-}
-
-.profile-picture img {
-    width: 200px; /* Adjust the size of the profile image */
+  }
+  
+  .profile-picture {
+    width: 200px;
     height: 200px;
-    margin-right: 30px;
-    margin-top: 180px;
-    margin-bottom: 10px;
-    border-radius: 50%; /* Make it circular */
-    border: 3px solid #356989; /* Optional: Add a border */
-    object-fit: cover; /* Ensure the image fits well */
-}
-
-.bio-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    margin-top: 0;
-}
-
-.bio {
-    max-width: 100%; /* Limit the width of the bio section */
-    flex: 1; /* Allow the bio to take up the available space */
-    margin-right: 20px; /* Add space between text and image */
-}
-/* Generic box styling for each section */
-.bio-box, .email-box, .art-box {
-    background-color: #3c181814; /* Light burgundy background */
-    border: 3px solid #3c1818; /* Burgundy border */
-    border-radius: 3px; /* Rounded corners */
-    padding: 20px; /* Spacing inside the box */
-    margin-bottom: 20px; /* Space between boxes */
-    box-shadow: 0 4px 6px rgb(74, 24, 24); /* Subtle shadow for depth */
-}
-.art-box {
-    background-color: #3c181814; /* Light burgundy background */
-    border: 3px solid #3c1818; /* Burgundy border */
-    border-radius: 3px; /* Rounded corners */
-    padding: 20px; /* Spacing inside the box */
-    margin-bottom: 20px; /* Space between boxes */
-    box-shadow: 0 4px 6px rgb(74, 24, 24); /* Subtle shadow for depth */
-}
-
-/* Text styling */
-.bio-box h2, .email-box h2, .art-box h2 {
-    color: #182e3c; /* Burgundy text color */
-    margin-bottom: 10px; /* Space below heading */
-}
-
-.bio-box p, .email-box p, .art-box p {
-    color: #333; /* Darker text color for contrast */
-    line-height: 1.6; /* Improve readability */
-}
-
-h2 {
-    margin-top: 0;
-    margin-bottom: 0; /* Reduce space between h1 and h2 */
-    font-size: 1.4em;
-    color: #356989;
-}
-
-p {
-    font-size: 1em;
-    color: #555;
-    line-height: 1.6;
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-ul li {
-    font-size: 1em;
-    color: #555;
-}
-
-a {
-    color: #0077cc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-/* Gallery styles */
-.gallery-container {
-    align-items: left;
     margin-top: 20px;
-}
-
-.gallery {
-display: grid;
-grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
-width: 100%;
-gap: 20px;
-}
-
-.gallery-item {
-border: 0 solid #182e3c;
-border-radius: 3px;
-overflow: hidden;
-box-shadow: 0 0 0 #182e3c;
-background-color: #3c181800;
-text-align: center;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-
-.gallery-image {
-width: 200px; /* Set the width of the image */
-height: auto;
-display: block;
-}
-
-.gallery-details {
-padding: 10px;
-}
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #182e3c;
+  }
+  
+  .profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Bio section styles */
+  .bio-container {
+    margin-bottom: 40px;
+  }
+  
+  .bio-box {
+    background-color: #f5f5f5;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bio-box h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .bio-box p {
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  /* Art gallery section styles */
+  .art-box {
+    margin-bottom: 40px;
+  }
+  
+  .art-box h2 {
+    color: #182e3c;
+    margin-bottom: 20px;
+  }
+  
+  .gallery-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .gallery-item {
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .gallery-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-details {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .gallery-details h3 {
+    color: #182e3c;
+    font-size: 1.2rem;
+  }
+  
+  /* Footer styles */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:  10px;
+    background-color: #4b1c1c;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .footer-left, .footer-right {
+    flex: 1; /* Allows the left and right sections to occupy equal space */
+  }
+  .footer-left {
+    margin-left: 30px;
+    text-align: left; /* Aligns text to the left */
+  }
+  
+  .footer-right {
+    margin-right: 30px;
+    text-align: right; /* Aligns text to the right */
+    color: #dbdbdb;
+  }
+  .footer-content {
+    padding: 0 ;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .footer-left h2 {
+    color: #e9e7e7;
+    margin-bottom: 0;
+  }
+  
+  .footer-left p {
+    color: #dbdbdb;
+    margin:  0;
+  }
+  
+  .footer-left a {
+    color: #8ec1ff;
+    text-decoration: none;
+  }
+  
+  .footer-left a:hover {
+    color: #8ec1ff;
+    text-decoration: underline;
+  }
+  
+  
+  /* Make sure content is scrollable on all devices */
+  html {
+    height: 100%;
+    overflow-y: scroll;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile-picture {
+      margin-top: 20px;
+    }
+  
+    .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-right {
+      margin-top: 20px;
+    }
+  }

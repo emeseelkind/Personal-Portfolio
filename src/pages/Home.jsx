@@ -19,6 +19,7 @@ const images = [
 const Home = () => {
   return (
     <div className="home-container">
+      <div className="content-wrapper">
       {/* Align About Me text and Profile Picture on the same line */}
       <div className="header-container">
         <h1>About Me</h1>
@@ -40,26 +41,12 @@ const Home = () => {
              I also love coding so I developed this website from scratch. 
              I hope you enjoy!</p>
           </div>
-          <div className="email-box">
-          <h2>📫 Send me an email</h2>
-          <p>Personal Email: <a href="mailto:emese.elkind@gmail.com">emese.elkind@gmail.com</a></p>
-
-          <p>School Email: <a href="mailto:21ee17@queensu.ca">21ee17@queensu.ca</a></p>
-          
-          <h2>🔗 Connect with me on LinkedIn</h2>
-          <p>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-              My LinkedIn Profile
-            </a>
-          </p>
-          <h2>⚡ Fun fact</h2>
-          <p>I am a Queen's University Varsity Figure Skater.</p>
-          </div>
         </section>
       </div>
+
       {/* Image Gallery Section */}
       <div className="art-box">
-        <h2>🎨 My Artwork</h2>
+        <h2>My Artwork</h2>
         <div className="gallery-container">
           <div className="gallery">
             {images.map((image, index) => (
@@ -75,7 +62,25 @@ const Home = () => {
         </div>
       </div>
     </div>
-  </div>
+    </div>
+    {/* Footer Section */}
+    <div className="footer-container">
+      <div className="footer-content">
+        <div className="footer-left">
+            <h2>Connect with me</h2>
+            <p>Personal Email: <a href="mailto:emese.elkind@gmail.com">emese.elkind@gmail.com</a></p>
+            <p>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                    My LinkedIn Profile
+                </a>
+            </p>
+        </div>
+        <div className="footer-right">
+            <p>Website developed by Emese Elkind</p>
+        </div>
+      </div>
+    </div>  
+  </div>  
   );
 };
 
