@@ -1,8 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
 .rocks-page {
     text-align: center;
     position: relative;
 
-    margin-top: 300px;
+    margin-top: 600px;
     padding: 0 20px;
 }
 
@@ -15,10 +19,10 @@
 
 .description {
     font-size: 18px;
-    margin-bottom: 30px;
 }
 
 .gallery {
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

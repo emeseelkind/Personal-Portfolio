@@ -1,28 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 .posters-page {
-    text-align: center;
-    margin-top: 10px;
-    padding: 0 20px;
+  top: 0;
+  text-align: center;
+  margin: 0; /* Ensure no margin is applied */
+  padding: 0;
 }
 
 .title {
     color: #182e3c;
     font-size: 36px;
     font-weight: bold;
-    margin: 20px 0 10px;
 }
 
 .description {
   font-size: 18px;
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
-
+.subtitle{
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .posters-row {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    margin-top: 0;
   }
   
   .poster {
@@ -32,13 +41,13 @@
   .poster-image {
     width: 300px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
   }
   
   .poster-image:hover {
-    transform: scale(1.05);
+    transform: scale(1.3);
   }
   
   .poster-title {

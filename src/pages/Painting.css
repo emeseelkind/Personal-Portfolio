@@ -1,6 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 .painting-page {
   position: relative;
-  top: 350px;
+  top: 650px;
   text-align: center;
   margin-top: 100px;
   padding: 0;

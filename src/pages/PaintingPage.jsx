@@ -28,37 +28,48 @@ import Painting25 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/pai
 import Painting26 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/paintings/PXL_20241229_212117309~2.jpg";
 import Painting27 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/paintings/PXL_20241229_212146059~2.jpg";
 import Painting28 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/paintings/PXL_20241229_212212945.jpg";
+import Painting29 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/paintings/PXL_20250102_202240441~2.jpg";
+import Painting30 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/paintings/PXL_20250102_202254893~2.jpg";
+import Painting31 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/paintings/PXL_20250102_202300808~2.jpg";
+import Painting32 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/paintings/PXL_20250102_202317847.jpg";
+import Painting33 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/paintings/PXL_20250102_202425245~2.jpg";
+
 
 const imageDetails = [
-  { src: Painting1, title: "A Pastiche of Amedeo Modigliani's Jeanne Hébuterne", date: "Date 1", type: "Acrylic", size: "Size 1" },
-  { src: Painting2, title: "A Pastiche of Csontvary", date: "Date 2", type: "Acrylic", size: "8.5 x 11" },
-  { src: Painting11, title: "A Pastiche of Csontvary", date: "Date 11", type: "Acrylic", size: "8.5 x 11" },  
-  { src: Painting5, title: "A Pastiche of The Group Of Seven", date: "Date 5", type: "Acrylic", size: "Size 5" },
-  { src: Painting7, title: "Farmlands", date: "Date 7", type: "Acrylic", size: "Size 7" },
-  { src: Painting8, title: "Camping out west", date: "Date 8", type: "Acrylic", size: "Size 8" },
-  { src: Painting9, title: "Cottage nights", date: "Date 9", type: "Acrylic", size: "8.5 x 11" },
-  { src: Painting10, title: "untitled", date: "Date 10", type: "Acrylic", size: "8.5 x 11" },
-  { src: Painting14, title: "Fantasy", date: "Date 14", type: "Acrylic", size: "Size 14" },
-  { src: Painting16, title: "Northern Lights", date: "Date 16", type: "Acrylic", size: "Size 16" },
-  { src: Painting17, title: "Blue Series 6", date: "Date 17", type: "Acrylic", size: "Size 17" },
-  { src: Painting18, title: "Blue Series 5", date: "Date 18", type: "Acrylic", size: "Size 18" },
-  { src: Painting19, title: "Blue Series 4", date: "Date 19", type: "Acrylic", size: "Size 19" },
-  { src: Painting20, title: "Blue Series 3", date: "Date 20", type: "Acrylic", size: "Size 20" },
-  { src: Painting21, title: "Blue Series 2", date: "Date 21", type: "Acrylic", size: "Size 21" },
-  { src: Painting22, title: "Blue Series 1", date: "Date 22", type: "Acrylic", size: "Size 22" },
-  { src: Painting23, title: "Wolf", date: "Date 23", type: "Acrylic", size: "Size 23" },
-  { src: Painting15, title: "Space", date: "Date 15", type: "Acrylic", size: "Size 15" },
-  { src: Painting24, title: "Cottages", date: "Date 24", type: "Acrylic", size: "Size 24" },
-  { src: Painting25, title: "Mountains", date: "Date 25", type: "Acrylic", size: "Size 25" },
-  { src: Painting26, title: "Starry Night replica", date: "Date 26", type: "Acrylic", size: "Size 26" },
-  { src: Painting27, title: "Lake Balaton", date: "Date 27", type: "Acrylic", size: "Size 27" },
-  { src: Painting6, title: "Waterfall in the valley", date: "Date 6", type: "Acrylic", size: "Size 6" },
-  { src: Painting28, title: "Flames in a Forest", date: "Date 28", type: "Acrylic", size: "Size 28" },
-  { src: Painting3, title: "Dusk", date: "Date 3", type: "Acrylic", size: "Size 3" },
-  { src: Painting4, title: "Pine Cone", date: "Date 4", type: "Acrylic", size: "Size 4" },
-  { src: Painting13, title: "Light house", date: "Date 13", type: "Acrylic", size: "Size 13" },
-  { src: Painting12, title: "Blue", date: "Date 12", type: "Acrylic", size: "Size 12" },
-  
+  { src: Painting1, title: "A Pastiche of Amedeo Modigliani's Jeanne Hébuterne" },
+  { src: Painting2, title: "A Pastiche of Csontvary" },
+  { src: Painting11, title: "A Pastiche of Csontvary" },  
+  { src: Painting5, title: "A Pastiche of The Group Of Seven" },
+  { src: Painting7, title: "Farmlands" },
+  { src: Painting9, title: "Cottage nights" },
+  { src: Painting10, title: "untitled" },
+  { src: Painting14, title: "Fantasy" },
+  { src: Painting29, title: "Moon over Mountains"},
+  { src: Painting32, title: "Lie Down" },
+  { src: Painting26, title: "Starry Night replica" },
+
+  { src: Painting16, title: "Northern Lights" },
+  { src: Painting17, title: "Blue Series 6" },
+  { src: Painting18, title: "Blue Series 5" },
+  { src: Painting19, title: "Blue Series 4" },
+  { src: Painting20, title: "Blue Series 3" },
+  { src: Painting21, title: "Blue Series 2" },
+  { src: Painting22, title: "Blue Series 1" },
+  { src: Painting23, title: "Wolf" },
+  { src: Painting15, title: "Space" },
+  { src: Painting24, title: "Cottages" },
+  { src: Painting25, title: "Mountains" },
+  { src: Painting27, title: "Lake Balaton" },
+  { src: Painting6, title: "Waterfall in the valley" },
+  { src: Painting28, title: "Flames in a Forest" },
+  { src: Painting3, title: "Dusk" },
+  { src: Painting8, title: "Camping out west" },
+  { src: Painting4, title: "Pine Cone" },
+  { src: Painting13, title: "Light house" },
+  { src: Painting12, title: "Blue" },
+  { src: Painting30, title: "Lake Ontario"},
+  { src: Painting31, title: "Bridge" },
+  { src: Painting33, title: "Turtle Island "},
 ];
 
 const PaintingPage = () => {
@@ -75,9 +86,6 @@ const PaintingPage = () => {
               </div>
               <div className="card-back">
                 <h3>{image.title}</h3>
-                <p>Date: {image.date}</p>
-                <p>Type: {image.type}</p>
-                <p>Size: {image.size}</p>
               </div>
             </div>
           </div>

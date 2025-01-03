@@ -12,27 +12,27 @@ html, body {
 
 .home-container {
     position: relative;
-    top: 100px;
+    top: 120px;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     min-height: 100vh; /* Ensures it fills the whole screen height */
-    padding: 20px;
+    padding: 45px;
     background-color: #ffffff;
     border-radius: 2px;
     overflow-y: auto; /* Allow scrolling within the container */
     -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
     scrollbar-width: none; /* Hide scrollbar in Firefox */
-    width: 100%;
+    width: 94%;
 }
 
 .home-container::-webkit-scrollbar {
     display: none; /* Hide scrollbar in Chrome, Safari, and Edge */
 }
 
-/* Align About Me text and Profile Picture on the same line */
+/* Align About Me text and Profile Picture */
 .header-container {
     display: flex;
     justify-content: space-between; /* Push text to the left and image to the right */
@@ -44,7 +44,11 @@ html, body {
 h1 {
     color: #182e3c;
     font-size: 3em;
-    margin: 20px 20px 0 0;  /* Add space between text and image */
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
     flex: 1; /* Allow text to take the remaining space */
 }
 

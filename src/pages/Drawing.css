@@ -1,7 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 .drawing-page {
     position: relative;
     text-align: center;
-    margin-top: 1750px;
+    margin-top: 2050px;
     padding: 0 20px;
   }
   
