@@ -28,6 +28,7 @@ const Header = () => {
                     <li><Link to="/rocks">Rocks</Link></li>
                     <li><Link to="/posters">Posters</Link></li>
                     <li><Link to="/cds">CDs</Link></li>
+                    <li><Link to="/artprojects">Art Projects</Link></li>
                   </ul>
                 )}
               </button>

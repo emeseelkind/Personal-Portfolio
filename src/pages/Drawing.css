@@ -1,73 +1,81 @@
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 .drawing-page {
-    position: relative;
-    text-align: center;
-    margin-top: 2050px;
-    padding: 0 20px;
-  }
-  
-  .title {
-    color: #182e3c;
-    font-size: 36px;
-    font-weight: bold;
-    margin-top: 80px;
-    margin-bottom: 20px;
-  }
-  
-  .description {
-    font-size: 18px;
-    margin-bottom: 40px;
-  }
-  
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Space between items */
-  }
-  
-  .card {
-    width: 200px; /* Set the width of the card */
-    height: 300px; /* Set the height of the card */
-    perspective: 1000px;
-  }
-  
-  .card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
-  }
-  
-  .card:hover .card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .card-front,
-  .card-back {
-    width: 100%; /* Set the width of the card */
-    height: 100%; /* Set the height of the card */
-    position: absolute;
-    backface-visibility: hidden;
-  }
-  
-  .card-front img {
-    width: 100%; /* Ensure image fits within the width of the card */
-    height: 100%; /* Ensure image fits within the height of the card */
-    object-fit: contain; /* This makes sure the image fits within the box without cropping */
-    background-color: white; /* Optional: background color to fill any empty space */
-  }
-  
-  .card-back {
-    background-color: #182e3c;
-    color: white;
-    transform: rotateY(180deg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  text-align: center;
+  margin-top:  80px;
+  padding: 20px;
+  width: 100%;
+}
+
+.title {
+  color: #182e3c;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 40px;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.card {
+  width: 200px; /* Set the width of the card */
+  height: 300px; /* Set the height of the card */
+  perspective: 1000px;
+  margin: 0 auto;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.card-front img {
+  width: 100%; /* Ensure image fits within the width of the card */
+  height: 100%; /* Ensure image fits within the height of the card */
+  object-fit: contain; /* This makes sure the image fits within the box without cropping */
+  background-color: white; /* Optional: background color to fill any empty space */
+}
+
+.card-back {
+  background-color: #182e3c;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

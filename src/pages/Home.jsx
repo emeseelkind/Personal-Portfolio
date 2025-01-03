@@ -7,6 +7,7 @@ import rock1 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/rocks/PX
 import cds1 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/paintings/PXL_20241229_211618280~2.jpg";
 import drawing1 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/drawings/PXL_20241230_223328302.jpg";
 import poster1 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/posters/PXL_20250102_001656830~2.jpg";
+import artproject1 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/art projects/PXL_20250103_181802909.PORTRAIT~2.jpg";
 
 const images = [
   { src: painting1, title: "Paintings", link: "/paintings" },
@@ -14,6 +15,7 @@ const images = [
   { src: rock1, title: "Rocks", link: "/rocks" },
   { src: poster1, title: "Posters", link: "/posters" },
   { src: cds1, title: "CDs", link: "/cds" },
+  { src: artproject1, title: "Art Projects", link: "/artprojects" }
 ];
 
 const Home = () => {

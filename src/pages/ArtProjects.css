@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.artproj-page {
+    text-align: center;
+    margin-top:  80px;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .title {
+    color: #182e3c;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .description {
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin: 0 auto auto;
+  }
+  
+  .artproj-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .poster {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+  
+  .poster-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .poster:hover .poster-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .poster-front,
+  .poster-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .poster-front {
+    background-color: #fff;
+  }
+  
+  .poster-back {
+    background-color: #fff;
+    transform: rotateY(180deg);
+  }
+  
+  .poster-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .artproj-title {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #182e3c;
+  }

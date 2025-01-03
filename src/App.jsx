@@ -7,7 +7,8 @@ import PaintingPage from './pages/PaintingPage.jsx';
 import DrawingsPage from './pages/DrawingPage.jsx';
 import RocksPage from './pages/RocksPage.jsx';  
 import CDsPage from './pages/CDsPage.jsx';   
-import Posters from './pages/Posters.jsx';   
+import Posters from './pages/Posters.jsx';  
+import ArtProjects from './pages/ArtProjects.jsx'; 
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Route path="/rocks" element={<RocksPage />} /> 
         <Route path="/cds" element={<CDsPage />} />
         <Route path="/posters" element={<Posters />} />
-
+        <Route path="/projects" element={<ArtProjects />} />
       </Routes>
     </Router>
   );
