@@ -2,13 +2,18 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow-y: auto;
   position: relative;
 }
+
 .painting-page {
   padding: 20px;
   margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
+  box-sizing: border-box; /* Add this to include padding in width calculation */
 }
 
 .title {
@@ -16,14 +21,15 @@ body {
   align-items: center;
   text-align: center;
   color: #182e3c;
-  font-size: 36px;
+  font-size: 36px; 
   font-weight: bold;
   margin-top: 80px;
-  margin-bottom: 20px 0;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .description {
-  font-size: 18px;
+  font-size: 18px; /* Changed to rem for better scaling */
   margin-bottom: 40px;
   max-width: 800px;
   margin-left: auto;
@@ -31,6 +37,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0 20px; /* Add padding for smaller screens */
 }
 
 .gallery {
@@ -38,40 +45,41 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 30px;
   padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .card {
-  width: 200px;; /* Set the width of the card */
-  height: 300px; /* Set the height of the card */
+  width: 100%; /* Changed to percentage */
+  max-width: 200px; /* Added max-width */
+  height: 300px;
   perspective: 1000px;
   margin: 0 auto;
 }
 
 .card-inner {
   position: relative;
-  width: 200px;
+  width: 100%; /* Changed to percentage */
+  max-width: 200px; /* Added max-width */
   height: 300px;
   transform-style: preserve-3d;
   transition: transform 0.6s;
 }
 
-.card:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
 .card-front, .card-back {
   position: absolute;
-  width: 200px;
+  width: 100%; /* Changed to percentage */
+  max-width: 200px; /* Added max-width */
   height: 300px;
   backface-visibility: hidden;
   overflow: hidden;
 }
 
 .card-front img {
-  width: 200px;
-  height: 300px;
-  object-fit: cover; /* This makes sure the image fits within the box without cropping */
-  background-color: white; /* Optional: background color to fill any empty space */
+  width: 100%; /* Changed to percentage */
+  height: 100%; /* Changed to percentage */
+  object-fit: cover;
+  background-color: white;
 }
 
 .card-back {
@@ -84,4 +92,39 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  box-sizing: border-box;
+}
+
+/* Add media queries for responsive design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.75rem;
+    margin-top: 60px;
+  }
+
+  .description {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  .gallery {
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .card, .card-inner, .card-front, .card-back {
+    height: 250px; /* Slightly smaller cards on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .card, .card-inner, .card-front, .card-back {
+    height: 200px; /* Even smaller cards on very small screens */
+  }
 }

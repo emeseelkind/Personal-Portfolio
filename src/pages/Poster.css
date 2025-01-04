@@ -5,7 +5,7 @@ body {
 .posters-page {
   top: 0;
   text-align: center;
-  margin: 0; /* Ensure no margin is applied */
+  margin: 0; 
   padding: 0;
 }
 
@@ -40,9 +40,8 @@ body {
   
   .poster-image {
     width: 300px;
-    height: auto;
+    height: 400px;
     border-radius: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
   }
   
