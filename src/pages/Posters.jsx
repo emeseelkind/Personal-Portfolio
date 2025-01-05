@@ -14,15 +14,10 @@ const PostersPage = () => {
     <div className="posters-page">
       <h1 className="title">Posters Gallery</h1>
       <p className="description">Welcome to my Posters.</p>
-      <h3 className="subtitle">.................................................
-        .........................................................................
-        .....................................................................
-        .........................................................
-        ..........................................................</h3>
       <div className="posters-row">
         {imageDetails.map((poster, index) => (
           <div className="poster" key={index}>
-            <img src={poster.src} alt={poster.title} className="poster-image" />
+            <img src={poster.src} alt={poster.title} className="poster-image"  />
             <p className="poster-title">{poster.title}</p>
           </div>
         ))}

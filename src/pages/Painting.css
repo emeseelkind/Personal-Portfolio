@@ -42,9 +42,9 @@ body {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 30px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0;
   width: 100%;
   box-sizing: border-box;
 }
@@ -108,23 +108,12 @@ body {
   }
 
   .gallery {
-    gap: 20px;
-    padding: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 0;
   }
 
   .card, .card-inner, .card-front, .card-back {
     height: 250px; /* Slightly smaller cards on mobile */
-  }
-}
-
-@media (max-width: 480px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
-    padding: 10px;
-  }
-
-  .card, .card-inner, .card-front, .card-back {
-    height: 200px; /* Even smaller cards on very small screens */
   }
 }
