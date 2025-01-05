@@ -13,7 +13,7 @@ body {
 }
 
 .title {
-  color: #182e3c;
+  color: #660033;
   font-size: 36px;
   font-weight: bold;
   margin: 20px 0;
@@ -79,4 +79,24 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+@media (max-width: 1080px) {
+  .gallery {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+  }
+}
+
+@media (max-width: 810px) {
+  .gallery {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 560px) {
+  .gallery {
+      grid-template-columns: 1fr; /* 1 column on very small screens */
+      align-items: center;
+      justify-content: center;
+      padding: 20px ;
+  }
 }

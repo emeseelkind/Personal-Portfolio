@@ -22,7 +22,7 @@ body {
 }
 
 .title {
-  color: #182e3c;
+  color: #660033;
   font-size: clamp(24px, 5vw, 36px);
   font-weight: bold;
   width: 100%;
@@ -46,14 +46,12 @@ body {
   padding: 20px 0;
 }
 
-/* Rest of your CSS remains the same */
-
 .poster {
   flex: 0 1 250px; /* Changed to allow shrinking */
   text-align: center;
   height: auto; /* Make height responsive */
   max-width: 100%; /* Prevent overflow on small screens */
-  aspect-ratio: 3/4; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .poster-image {

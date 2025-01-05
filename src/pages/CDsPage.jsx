@@ -1,6 +1,7 @@
 // src/pages/CDsPage.jsx
 
 import React from 'react';
+import "C:/Users/emese/Desktop/Emese's Art/emeses-art/src/pages/cds.css"; 
 
 import cd1 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/cds/PXL_20250105_221856470.jpg";
 import cd2 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/cds/PXL_20250105_221938455.jpg";
@@ -20,15 +21,20 @@ const imageDetails = [
 const CDsPage = () => {
   return (
     <div className="cds-page">
-      <h1 className="title">CDs Page</h1>
-      <p className="description">Explore our collection of CDs, carefully curated for every music lover.</p>
-      <div className="gallery">
-        {imageDetails.map((image, index) => (
-          <div className="image-container" key={index}>
-            <img className="cd-image" src={image.src} alt={image.title} />
-            <p className="image-title">{image.title}</p>
-          </div>
-        ))}
+      <div className="content-wrapper">
+        <h1 className="title">CDs</h1>
+        <p className="description">
+          Turning old CDs into coasters or unique wall art.
+        </p>
+        <div className="gallery">
+          {imageDetails.map((image, index) => (
+            <div className="image-container" key={index}>
+              <img 
+                className="cd-image" 
+                src={image.src} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

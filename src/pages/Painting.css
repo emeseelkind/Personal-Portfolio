@@ -20,7 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #182e3c;
+  color: #660033;
   font-size: 36px; 
   font-weight: bold;
   margin-top: 80px;
@@ -95,25 +95,23 @@ body {
   box-sizing: border-box;
 }
 
-/* Add media queries for responsive design */
-@media (max-width: 768px) {
-  .title {
-    font-size: 1.75rem;
-    margin-top: 60px;
-  }
-
-  .description {
-    font-size: 1rem;
-    padding: 0 15px;
-  }
-
+@media (max-width: 1080px) {
   .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
-    padding: 0;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
   }
+}
 
-  .card, .card-inner, .card-front, .card-back {
-    height: 250px; /* Slightly smaller cards on mobile */
+@media (max-width: 810px) {
+  .gallery {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 560px) {
+  .gallery {
+      grid-template-columns: 1fr; /* 1 column on very small screens */
+      align-items: center;
+      justify-content: center;
+      padding: 20px ;
   }
 }
