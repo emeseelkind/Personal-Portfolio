@@ -49,9 +49,8 @@ body {
 .poster {
   flex: 0 1 250px; /* Changed to allow shrinking */
   text-align: center;
-  height: auto; /* Make height responsive */
   max-width: 100%; /* Prevent overflow on small screens */
-  height: auto; /* Maintain aspect ratio */
+  height: 400px; /* Maintain aspect ratio */
 }
 
 .poster-image {
