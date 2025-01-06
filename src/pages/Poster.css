@@ -47,9 +47,9 @@ body {
 }
 
 .poster {
-  flex: 0 1 250px; 
+  flex: 0 1 300px; 
   text-align: center;
-  width: 100%; 
+  width: 300px; 
   height: auto; 
 }
 
@@ -59,7 +59,7 @@ body {
   border-radius: 0;
   transform-style: preserve-3d;
   transition: transform 0.3s;
-  object-fit: cover; /* Maintain aspect ratio */
+  object-fit: contain; /* Maintain aspect ratio */
 }
 
 .poster-image:hover {
@@ -68,7 +68,7 @@ body {
 }
 
 .poster-title {
-  font-size: clamp(14px, 2.5vw, 18px); /* Responsive font size */
+  font-size: 18px; /* Responsive font size */
   font-weight: bold;
   margin-top: 10px;
   color: #182e3c;
@@ -83,6 +83,9 @@ body {
   
   .posters-row {
     gap: 15px;
+  }
+  .poster {
+    width: 300px;
   }
   .poster-image {
     width: 400px;
