@@ -77,7 +77,7 @@ const PaintingPage = () => {
     <div className="painting-page">
       <h1 className="title">Paintings</h1>
       <p className="description">Welcome to my paintings protfolio. 
-        This is a collection from 2016 to the present. Most paintings are painted in acrylic paint.</p>
+        This is a collection from 2016 to the present. I have used acrylic paint for most of my paintings.</p>
       <div className="gallery">
         {imageDetails.map((image, index) => (
           <div className="card" key={index}>

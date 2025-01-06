@@ -13,7 +13,7 @@ const ArtProjects = () => {
   return (
     <div className="artproj-page">
       <h1 className="title">Art Projects</h1>
-      <p className="description">Art Projects.</p>
+      <p className="description">   </p>
       <div className="artproj-row">
         {imageDetails.map((poster, index) => (
           <div className="poster" key={index}>

@@ -35,11 +35,11 @@ const Home = () => {
         <section className="bio">
         <div className="bio-box">
           <h2>Bio</h2>
-          <p>I am a Biomedical Computing student at Queen's University but I am also an artist. 
+          <p>I am a Biomedical Computing student at Queen's University and an artist. 
             I went to an arts school in middle school called Spectrum Alternative School where I was able to build my artistic abilities.
             This portfolio showcases a collection of my visual art projects completed both at school and after graduation.
-            Art of many mediums became a passion of mine and I have continued to create art in my free time as an outlet.
-             This portfolio includes paintings, sketches, and other visual mediums. 
+            Art of many media became a passion of mine and I have continued to create art in my free time as an outlet.
+             This portfolio includes paintings, sketches, and other visual media. 
              I also love coding so I developed this website from scratch. 
              I hope you enjoy!</p>
           </div>
@@ -49,6 +49,7 @@ const Home = () => {
       {/* Image Gallery Section */}
       <div className="art-box">
         <h2>My Artwork</h2>
+        <p>Click a category to see more!</p>
         <div className="gallery-container">
           <div className="gallery">
             {images.map((image, index) => (

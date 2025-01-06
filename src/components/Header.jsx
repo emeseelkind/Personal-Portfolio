@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-left">
-        <span className="initials">Emese Elkind</span>
+        <span className="initials">Emese Elkind's Artwork</span>
       </div>
       <div className="header-right">
         <nav>

@@ -13,7 +13,7 @@ const PostersPage = () => {
   return (
     <div className="posters-page">
       <h1 className="title">Posters Gallery</h1>
-      <p className="description">Welcome to my Posters.</p>
+      <p className="description">   </p>
       <div className="posters-row">
         {imageDetails.map((poster, index) => (
           <div className="poster" key={index}>
