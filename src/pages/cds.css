@@ -79,11 +79,14 @@ body {
     }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 600px) {
     .gallery {
         grid-template-columns: 1fr; /* 1 column on very small screens */
         align-items: center;
         justify-content: center;
         padding: 20px ;
     }
+    .cds-page {
+        margin-top: 40px;
+    }    
 }

@@ -5,6 +5,7 @@ body {
     overflow-x: hidden;
 }
 .artproj-page {
+  margin-top: 0;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -98,16 +99,6 @@ body {
       height: 300px;
       object-fit: contain;  /* Changed to contain to maintain aspect ratio */
   }
-
-    .title {
-        font-size: 36px;
-    }
-
-    .description {
-        font-size: 18px;
-        padding: 0 20px;
-    }
-
     .artproj-row {
         gap: 20px;
         padding: 10px;

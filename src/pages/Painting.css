@@ -107,7 +107,10 @@ body {
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 590px) {
+  .painting-page {
+      margin-top: 130px; /* Adjust margin for smaller screens */
+  }
   .gallery {
       grid-template-columns: 1fr; /* 1 column on very small screens */
       align-items: center;
