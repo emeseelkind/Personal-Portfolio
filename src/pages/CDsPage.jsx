@@ -9,14 +9,19 @@ import cd3 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/cds/PXL_20
 import cd4 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/cds/PXL_20250105_221952234.jpg";
 import cd5 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/cds/PXL_20250105_221957134.jpg";
 import cd6 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/cds/PXL_20250105_222007679.jpg";
+import cd7 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/cds/PXL_20250108_211851458.jpg";
+import cd8 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/cds/PXL_20250108_212331251.jpg";
 
 const imageDetails = [
-  { src: cd1 },
+  { src: cd7 },
+  { src: cd8 }, 
+  { src: cd5 },
   { src: cd2 },
   { src: cd3 },
   { src: cd4 },
-  { src: cd5 },
-  { src: cd6 },  
+  { src: cd1 },
+  { src: cd6 }, 
+  
 ];  
 const CDsPage = () => {
   return (
