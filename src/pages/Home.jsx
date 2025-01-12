@@ -1,3 +1,4 @@
+//Home.jsx
 import React from 'react';
 import './Home.css'; 
 import profilePic from '../assets/profile.png'; // Import the image

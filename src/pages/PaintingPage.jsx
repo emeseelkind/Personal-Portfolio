@@ -1,3 +1,4 @@
+// PaintingPage.jsx
 import React from 'react';
 import './Painting.css'; 
 import Painting1 from "C:/Users/emese/Desktop/Emese's Art/emeses-art/public/paintings/PXL_20241229_211313112~2.jpg";

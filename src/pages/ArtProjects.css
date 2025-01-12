@@ -1,3 +1,4 @@
+/*ArtProjects.css*/
 body {
     margin: 0;
     padding: 0;
@@ -5,7 +6,9 @@ body {
     overflow-x: hidden;
 }
 .artproj-page {
-  margin-top: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -35,6 +38,7 @@ body {
 .artproj-row {
   display: flex;
   justify-content: center;
+  align-items: center;    
   gap: 30px;
   flex-wrap: wrap;
   padding: 20px;
@@ -45,6 +49,7 @@ body {
 .poster {
   height: 400px;
   width: 533px; 
+  max-width: 100%;
   perspective: 1000px;
   overflow: hidden; 
   cursor: pointer;
@@ -78,15 +83,18 @@ body {
 }
 
 .poster-image {
-  height: 400px;
-  width: 533px; 
+  height: auto;
+  width: 100%; 
   object-fit: cover;
 }
 
 .artproj-title {
-  margin-top: 10px;
+  margin-top: 30px;
   font-size: 16px;
+  font-weight: bold;
   color: #182e3c;
+  text-align: center;
+  position: relative;
 }
 @media (max-width: 560px) {
     .poster {
@@ -103,5 +111,4 @@ body {
         gap: 20px;
         padding: 10px;
     }
-
 }

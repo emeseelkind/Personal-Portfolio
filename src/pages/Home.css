@@ -1,4 +1,4 @@
-/* Reset default margin and ensure proper scrolling */
+/* Home.css */
 body {
     margin: 0;
     padding: 0;
@@ -186,6 +186,7 @@ body {
   /* Responsive design */
   @media (max-width: 768px) {
     .header-container {
+      margin-top: 120px;
       flex-direction: column;
       text-align: center;
     }
